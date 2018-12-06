@@ -3,4 +3,5 @@
 ![img1](https://github.com/anshu1997/msearch/blob/master/img1.gif)
 <br>
 ### Overview
-A directory tree of the corresponding drive folder is built by performing a BFS traversal and is stored as <b>driveTree.obj</b>
+• <b>auth.py :</b> After verification of drive credentials, a directory tree of the corresponding folder is built by performing a BFS traversal and is stored as <b>driveTree.obj</b>
+• <b>disp.py :</b> Once a user query is passed, the request is sent to /result endpoint.
