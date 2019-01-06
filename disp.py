@@ -36,7 +36,7 @@ def bfs(srstr,parent=root) :
     	levelstr = [str(u.data['title'])]
     	X = vectorizer.transform(levelstr)
     	cosine_similarit = cosine_similarity(Y, X).flatten()
-    	if cosine_similarit>0.3: #Threshold for selecting folder
+    	if cosine_similarit>0.4: #Threshold for selecting folder
     		break
     	for i in range(len(u.children)):
     		q.append(u.children[i])
@@ -54,7 +54,7 @@ def bfs(srstr,parent=root) :
             levelstr = [str(u.data['title'])]
             X = vectorizer.transform(levelstr)
             cosine_similarit = cosine_similarity(Y, X).flatten()
-            if cosine_similarit>0.3:
+            if cosine_similarit>0.2:
                 print("%s %f" % (levelstr, cosine_similarit))
                 flag = 1
                 break
